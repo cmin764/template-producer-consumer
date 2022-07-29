@@ -4,6 +4,12 @@ Library     RPA.Excel.Files
 Library     RPA.Robocorp.WorkItems
 Library     RPA.Tables
 
+Resource    %{CUSTOM_RESOURCES_ENV=${CUSTOM_RESOURCES_VAR}}/common.resource
+
+
+*** Variables ***
+${CUSTOM_RESOURCES_VAR}    custom_resources
+
 
 *** Tasks ***
 Produce items
@@ -23,3 +29,5 @@ Produce items
         ...    variables=${variables}
         ...    save=True
     END
+    
+    Log Something  # this is coming from the common resources file
