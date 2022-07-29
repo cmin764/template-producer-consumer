@@ -5,7 +5,7 @@ Library     RPA.Robocorp.WorkItems
 Library     RPA.Tables
 
 Resource    %{RESOURCES_ENV=${RESOURCES}}/common.resource
-Resource    ${RESOURCES}/common.resource
+# Resource    ${RESOURCES}/common.resource
 
 
 *** Variables ***
