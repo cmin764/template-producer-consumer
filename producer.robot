@@ -4,11 +4,12 @@ Library     RPA.Excel.Files
 Library     RPA.Robocorp.WorkItems
 Library     RPA.Tables
 
-Resource    %{CUSTOM_RESOURCES_ENV=${CUSTOM_RESOURCES_VAR}}/common.resource
+Resource    %{RESOURCES_ENV=${RESOURCES}}/common.resource
+Resource    ${RESOURCES}/common.resource
 
 
 *** Variables ***
-${CUSTOM_RESOURCES_VAR}    custom_resources
+${RESOURCES}    resources
 
 
 *** Tasks ***
