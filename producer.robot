@@ -9,7 +9,7 @@ Resource    %{RESOURCES_ENV=${RESOURCES}}/common.resource
 
 
 *** Variables ***
-${RESOURCES}    resources
+${RESOURCES}    %{HOME}/Resources
 
 
 *** Tasks ***
